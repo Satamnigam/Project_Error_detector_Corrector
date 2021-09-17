@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/satyam/Desktop/my codes/Hamming_Encode_Decoder/encoder_decoder.xst" -ofn "C:/Users/satyam/Desktop/my codes/Hamming_Encode_Decoder/encoder_decoder.syr" 
+xst -intstyle ise -ifn "C:/Users/satyam/Desktop/my codes/Hamming_Encode_Decoder/encoder_decoder.xst" -ofn "C:/Users/satyam/Desktop/my codes/Hamming_Encode_Decoder/encoder_decoder.syr" 
+xst -intstyle ise -ifn "C:/Users/satyam/Desktop/my codes/Hamming_Encode_Decoder/encoder_decoder.xst" -ofn "C:/Users/satyam/Desktop/my codes/Hamming_Encode_Decoder/encoder_decoder.syr" 
+xst -intstyle ise -ifn "C:/Users/satyam/Desktop/my codes/Hamming_Encode_Decoder/encoder_decoder.xst" -ofn "C:/Users/satyam/Desktop/my codes/Hamming_Encode_Decoder/encoder_decoder.syr" 
