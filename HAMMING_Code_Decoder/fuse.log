@@ -1,0 +1,23 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/satyam/Desktop/my codes/HAMMING_Code_Decoder/decodde_test_isim_beh.exe" -prj "C:/Users/satyam/Desktop/my codes/HAMMING_Code_Decoder/decodde_test_beh.prj" "work.decodde_test" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/satyam/Desktop/my codes/HAMMING_Code_Decoder/decodrr.v" into library work
+WARNING:HDLCompiler:568 - "C:/Users/satyam/Desktop/my codes/HAMMING_Code_Decoder/decodrr.v" Line 37: Constant value is truncated to fit in <3> bits.
+WARNING:HDLCompiler:568 - "C:/Users/satyam/Desktop/my codes/HAMMING_Code_Decoder/decodrr.v" Line 38: Constant value is truncated to fit in <3> bits.
+WARNING:HDLCompiler:568 - "C:/Users/satyam/Desktop/my codes/HAMMING_Code_Decoder/decodrr.v" Line 39: Constant value is truncated to fit in <3> bits.
+WARNING:HDLCompiler:568 - "C:/Users/satyam/Desktop/my codes/HAMMING_Code_Decoder/decodrr.v" Line 40: Constant value is truncated to fit in <3> bits.
+WARNING:HDLCompiler:568 - "C:/Users/satyam/Desktop/my codes/HAMMING_Code_Decoder/decodrr.v" Line 41: Constant value is truncated to fit in <3> bits.
+Analyzing Verilog file "C:/Users/satyam/Desktop/my codes/HAMMING_Code_Decoder/decodde_test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Hamming_code_decoder
+Compiling module decodde_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/satyam/Desktop/my codes/HAMMING_Code_Decoder/decodde_test_isim_beh.exe
+Fuse Memory Usage: 28092 KB
+Fuse CPU Usage: 484 ms
