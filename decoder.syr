@@ -1,0 +1,316 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.10 secs
+ 
+--> Reading design: decoder.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "decoder.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "decoder"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : decoder
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "decodrr.v" in library work
+WARNING:HDLCompilers:299 - "decodrr.v" line 37 Too many digits specified in binary constant
+WARNING:HDLCompilers:299 - "decodrr.v" line 38 Too many digits specified in binary constant
+WARNING:HDLCompilers:299 - "decodrr.v" line 39 Too many digits specified in binary constant
+WARNING:HDLCompilers:299 - "decodrr.v" line 40 Too many digits specified in binary constant
+WARNING:HDLCompilers:299 - "decodrr.v" line 41 Too many digits specified in binary constant
+Module <decoder> compiled
+No errors in compilation
+Analysis of file <"decoder.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <decoder> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <decoder>.
+WARNING:Xst:2725 - "decodrr.v" line 37: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "decodrr.v" line 38: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "decodrr.v" line 39: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "decodrr.v" line 40: Size mismatch between case item and case selector.
+WARNING:Xst:2725 - "decodrr.v" line 41: Size mismatch between case item and case selector.
+Module <decoder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <decoder>.
+    Related source file is "decodrr.v".
+    Found 1-bit xor3 for signal <w1>.
+    Found 1-bit xor2 for signal <w1$xor0000>.
+    Found 1-bit xor3 for signal <w2>.
+    Found 1-bit xor4 for signal <w3>.
+    Summary:
+	inferred   3 Xor(s).
+Unit <decoder> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 4
+ 1-bit xor2                                            : 1
+ 1-bit xor3                                            : 2
+ 1-bit xor4                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 4
+ 1-bit xor2                                            : 1
+ 1-bit xor3                                            : 2
+ 1-bit xor4                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit decoder : the following signal(s) form a combinatorial loop: _mux0003, y<3>.
+WARNING:Xst:2170 - Unit decoder : the following signal(s) form a combinatorial loop: y<2>, _mux0002.
+WARNING:Xst:2170 - Unit decoder : the following signal(s) form a combinatorial loop: y<1>, _mux0001.
+WARNING:Xst:2170 - Unit decoder : the following signal(s) form a combinatorial loop: _mux0000, y<0>.
+
+Optimizing unit <decoder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block decoder, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : decoder.ngr
+Top Level Output File Name         : decoder
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 11
+#      LUT4                        : 7
+#      MUXF5                       : 4
+# IO Buffers                       : 12
+#      IBUF                        : 8
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                        4  out of   4656     0%  
+ Number of 4 input LUTs:                  7  out of   9312     0%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    232     5%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 8.134ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 56 / 4
+-------------------------------------------------------------------------
+Delay:               8.134ns (Levels of Logic = 5)
+  Source:            x<4> (PAD)
+  Destination:       y<3> (PAD)
+
+  Data Path: x<4> to y<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.706  x_4_IBUF (x_4_IBUF)
+     LUT4:I0->O            4   0.704   0.762  Mxor_w3_xo<0>1 (w3)
+     LUT4:I0->O            1   0.704   0.000  y_3_mux00001 (y_3_mux0000)
+     MUXF5:I0->O           2   0.321   0.447  y_3_mux0000_f5 (y_3_OBUF)
+     OBUF:I->O                 3.272          y_3_OBUF (y<3>)
+    ----------------------------------------
+    Total                      8.134ns (6.219ns logic, 1.915ns route)
+                                       (76.5% logic, 23.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 28.98 secs
+ 
+--> 
+
+Total memory usage is 4504840 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

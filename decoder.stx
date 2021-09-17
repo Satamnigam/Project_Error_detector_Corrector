@@ -1,0 +1,42 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/satyam/Desktop/my codes/HAMMING_Code_Decoder/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.40 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/satyam/Desktop/my codes/HAMMING_Code_Decoder/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.40 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "decodrr.v" in library work
+WARNING:HDLCompilers:299 - "decodrr.v" line 37 Too many digits specified in binary constant
+WARNING:HDLCompilers:299 - "decodrr.v" line 38 Too many digits specified in binary constant
+WARNING:HDLCompilers:299 - "decodrr.v" line 39 Too many digits specified in binary constant
+WARNING:HDLCompilers:299 - "decodrr.v" line 40 Too many digits specified in binary constant
+WARNING:HDLCompilers:299 - "decodrr.v" line 41 Too many digits specified in binary constant
+Module <decoder> compiled
+No errors in compilation
+Analysis of file <"decoder.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.77 secs
+ 
+--> 
+
+Total memory usage is 4445416 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/satyam/Desktop/my codes/HAMMING_Code_Decoder/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/satyam/Desktop/my codes/HAMMING_Code_Decoder/xst"
+elaborate
+-ifn decoder.prj
+-ifmt mixed
